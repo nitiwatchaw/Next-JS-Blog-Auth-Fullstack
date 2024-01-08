@@ -1,5 +1,5 @@
 
-import { getPosts } from '@/lib/data'
+// import { getPosts } from '@/lib/data'
 import styles from './adminPosts.module.css'
 import { getUsers } from '@/lib/data';
 import Link from 'next/link';

@@ -6,15 +6,15 @@ import { useRouter } from 'next/navigation'
 
 const ButtonMyPost = () => {
 
-    const getData = async () => {
-        const res = await fetch("http://localhost:3000/api/blog", { cache: "no-store" });
+    // const getData = async () => {
+    //     const res = await fetch("http://localhost:3000/api/blog", { cache: "no-store" });
 
-        if (!res.ok) {
-            throw new Error("Something went wrong");
-        }
+    //     if (!res.ok) {
+    //         throw new Error("Something went wrong");
+    //     }
 
-        return res.json();
-    };
+    //     return res.json();
+    // };
 
     const router = useRouter();
     const handleAddPostClick = () => {

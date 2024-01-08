@@ -1,12 +1,12 @@
 'use client'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './editPostForm.module.css'
 import { useFormState } from 'react-dom';
 import Link from 'next/link'
 import { editPost } from '@/lib/action';
 
 
-const EditPostForm = ({ postId, postTitle, postSlug, postImg, postDesc, postUser }) => {
+const EditPostForm = ({ postId, postTitle, postSlug, postImg, postDesc }) => {
 
 
     const [state, formAction] = useFormState(editPost, undefined);

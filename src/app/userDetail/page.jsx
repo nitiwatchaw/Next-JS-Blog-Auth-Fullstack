@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './userDetail.module.css'
 import { auth } from '@/lib/auth'
 import UserDetailComponent from '@/components/userDetail/userDetail'
 const UserDetail = async () => {
