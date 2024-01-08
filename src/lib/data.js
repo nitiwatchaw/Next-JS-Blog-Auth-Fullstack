@@ -88,6 +88,9 @@ export const getPost = async (slug) => {
   try {
     connectToDb();
     const post = await Post.findOne({ slug });
+    if (!post) {
+      throw new Error("Post not found");
+    }
     return post;
   } catch (err) {
     console.log(err);
@@ -116,3 +119,4 @@ export const getUsers = async () => {
     console.log(err);
   }
 };
+

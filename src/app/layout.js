@@ -17,13 +17,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <head>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/logoBlog.png' />
       </head>
 
       <body className={inter.className}>
         <div className=" container">
           <Navbar />
-          <div style={{height:"130px"}} />
+          <div style={{ height: "130px" }} />
           {children}
           <Footer />
         </div>
