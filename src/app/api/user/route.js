@@ -4,12 +4,21 @@ import { NextResponse } from "next/server";
 
 export const GET = async (request) => {
     try {
-        connectToDb();
+        // Connect to the database
+        await connectToDb();
 
-        const users = await User.find();
+        // Use lean() to get plain JavaScript objects instead of Mongoose documents
+        const users = await User.find().lean();
+
+    
+        if (!users || users.length === 0) {
+            throw new Error("No users found!");
+        }
+
+    
         return NextResponse.json(users);
     } catch (err) {
-        console.log(err);
-        throw new Error("Failed to fetch User!");
+        console.error("Error fetching users:", err);
+        throw new Error("Failed to fetch users!");
     }
 };
