@@ -1,0 +1,18 @@
+.postButton {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(220, 20, 60, 0.593);
+    color: var(--textColor);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+
+.postButton svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

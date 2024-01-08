@@ -1,0 +1,9 @@
+.addPostbtn {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #4840d7;
+    color: white;
+    border-radius: 8px;
+}

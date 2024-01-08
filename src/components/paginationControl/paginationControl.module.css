@@ -1,0 +1,52 @@
+.buttonContainer {
+    margin-top: 60px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid var(--borderLine);
+}
+
+.prev,
+.next {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #4428a64f;
+}
+
+.prev:hover,
+.next:hover,
+.pageButton:hover {
+    filter: brightness(90%);
+}
+
+.disable {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.buttonPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #4366d457;
+}
+
+.active{
+    background-color: #ff5c00;
+  }

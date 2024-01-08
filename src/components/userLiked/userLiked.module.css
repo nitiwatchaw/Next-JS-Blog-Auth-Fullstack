@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+
+}
+
+.imgCover {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--borderLine);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: gray;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+
+}

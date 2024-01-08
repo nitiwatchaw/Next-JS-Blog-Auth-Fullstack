@@ -1,0 +1,71 @@
+.ContactPage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgContainer {
+    height: 500px;
+    flex: 1;
+    position: relative;
+}
+
+.formContainer {
+    flex: 1;
+}
+
+.img {
+    object-fit: contain;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input,
+.form textarea {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--bgSoft);
+    color: var(--text);
+}
+
+
+.form button {
+    padding: 20px;
+    background-color: var(--btn);
+    color: var(--text);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .ContactPage {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .imgContainer {
+        width: 400px;
+        height: 400px;
+      
+        position: relative;
+    }
+
+    .imgContainer img {
+        width: 100%;
+        height: 100%;
+        position: relative !important;
+
+    }
+    .formContainer{
+        flex: none;
+        width: 100%;
+    }
+}

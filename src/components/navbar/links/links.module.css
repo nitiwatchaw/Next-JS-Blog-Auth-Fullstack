@@ -1,0 +1,236 @@
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerImg {
+    position: relative;
+}
+
+.logout {
+    min-width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+
+}
+
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    background: var(--profile);
+    border-radius: 35px;
+    padding: 8px 10px 8px 20px;
+}
+
+.profile p {
+    margin-right: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.img {
+    border-radius: 50%;
+    border: 2px solid var(--borderLine);
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background-color: var(--bg);
+}
+
+.btnClose,
+.btnOpen {
+    display: none;
+}
+
+.profileMobile {
+    display: none;
+}
+
+.wrapLink {
+    display: flex;
+    gap: 20px;
+}
+
+.logoutMobile {
+    display: none;
+}
+
+.loginMobile {
+    display: none;
+}
+
+@media (max-width:1040px) {
+    .links {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .btnClose {
+        display: block;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        line-height: 0px;
+    }
+
+    .btnClose svg {
+        font-size: 23px;
+        color: var(--text);
+
+    }
+
+    .btnOpen {
+        display: block;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        line-height: 0px;
+    }
+
+    .btnOpen svg {
+        color: var(--text);
+        font-size: 30px;
+    }
+
+    .links {
+        position: fixed;
+        padding: 20px 20px 50px 20px;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: calc(100vh - 0px);
+        background-color: var(--bgHeader);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+        overflow: hidden;
+        z-index: 500;
+
+        transform: translateX(0);
+        transition-duration: 600ms;
+        visibility: visible;
+
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .mobileActive {
+        visibility: hidden;
+        pointer-events: none;
+
+        transform: translateX(600px);
+    }
+
+    .profileMobile {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        border-bottom: 1px solid #44444c;
+        padding-bottom: 20px;
+    }
+
+    .profileMobile img {
+        width: 45px;
+        height: 45px;
+        border-radius: 13px;
+        border: 1px solid var(--borderLine);
+    }
+
+    .profileMobile a p:first-child {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+
+    .profileMobile a p:last-child {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: gray;
+    }
+
+    .detailName {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: space-between;
+    }
+
+    .wrapLink {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 17px;
+        width: 100%;
+    }
+
+    .menuList {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        border-bottom: 2px solid #44444c;
+        padding-bottom: 5px;
+    }
+
+    .menuAdmin {
+        border-top: 2px solid #44444c;
+        padding-top: 32px;
+    }
+
+    .menuAdmin {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .logoutMobile {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 12px 40px 1fr;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    .loginMobile {
+        display: flex;
+    }
+
+    .logoutMobile p {
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .logoutMobile p:nth-child(1) svg {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+}

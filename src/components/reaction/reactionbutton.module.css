@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.state{
+    color: red;
+    font-size: 14px;
+}
+.container button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container p{
+    font-size: 20px;
+    font-weight: bold;
+}

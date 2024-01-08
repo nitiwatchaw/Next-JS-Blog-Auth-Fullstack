@@ -1,0 +1,112 @@
+:root {
+    --bg: #1a1625;
+    --bgHeader: #0f141e;
+    --text: white;
+    --bgSoft: #2d2b42;
+    --textSoft: #e5e5e5;
+    --btn: #7a5af5;
+    --profile: linear-gradient(90deg, #8e83ff 0%, #182848 100%);
+    --Navborder: #575757;
+    --detailUser: #1c1827;
+    --borderLine: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+    /* Set your desired background color */
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+
+.container {
+    width: 1536px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:1536px) {
+    .container {
+        width: 1366px;
+
+    }
+}
+
+@media (max-width:1366px) {
+    .container {
+        width: 1280px;
+
+    }
+}
+
+@media (max-width:1280px) {
+    .container {
+        width: 1024px;
+        padding: 0 20px;
+
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        width: 768px;
+
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 640px;
+
+    }
+}
+
+@media (max-width:640px) {
+    .container {
+        width: 475px;
+
+    }
+}
+
+@media (max-width:475px) {
+    .container {
+        width: 380px;
+
+    }
+}
