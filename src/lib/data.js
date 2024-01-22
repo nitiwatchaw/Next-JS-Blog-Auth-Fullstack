@@ -3,8 +3,6 @@ import { connectToDb } from "./utils";
 import { unstable_noStore as noStore } from "next/cache";
 
 
-
-
 export const getPosts = async () => {
   try {
     connectToDb();
@@ -51,6 +49,7 @@ export const getPostsPagination = async ({ query, page = 1, limit = 1 }) => {
     throw err;
   }
 };
+
 
 export const getUsersPagination = async ({ query, page = 1, limit = 1 }) => {
   try {

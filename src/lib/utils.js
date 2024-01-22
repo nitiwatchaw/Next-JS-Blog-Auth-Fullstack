@@ -16,12 +16,12 @@ export const connectToDb = async () => {
       useUnifiedTopology: true,
     });
 
-    // Update the connection state
+
     connection.isConnected = db.connections[0].readyState;
 
     console.log("Connected to MongoDB");
   } catch (error) {
-    // Handle any errors that occur during the connection process
+  
     console.error("Error connecting to MongoDB:", error.message);
   }
 };
